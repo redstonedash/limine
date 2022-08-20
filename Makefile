@@ -3,7 +3,7 @@ INSTALL ?= ./install-sh
 
 PREFIX ?= /usr/local
 
-CFLAGS ?= -g -O2 -pipe -Wall -Wextra
+CFLAGS ?= -g -O2 -pipe -Wall -Wextra -fno-PIC -fno-pie -no-pie -fno-PIE
 
 .PHONY: all
 all: limine-deploy limine-version
